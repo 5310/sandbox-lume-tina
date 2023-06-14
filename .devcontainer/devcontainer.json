@@ -1,0 +1,26 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/devcontainers/features/rust:1": {
+			"version": "latest",
+			"profile": "complete"
+		},
+		"ghcr.io/devcontainers-contrib/features/deno:1": {
+			"version": "latest"
+		},
+		"devwasm.azurecr.io/dev-wasm/dev-wasm-feature/rust-wasi:0": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"denoland.vscode-deno",
+				"vadimcn.vscode-lldb",
+				"serayuzgur.crates",
+				"tamasfe.even-better-toml",
+				"mutantdino.resourcemonitor",
+				"rust-lang.rust-analyzer",
+				"schoero.tagged-template-syntax-highlighting"
+			]
+		}
+	}
+}
