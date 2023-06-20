@@ -1,7 +1,7 @@
 - Deno has come a long way, but there are still issues
   - Deno seems to match import map qualifiers literally
-      - If you have a setting for `lit-html/` for `lit-html/...` it won't match `lit`, and vice versa
-      - But you can try to import `lit-html/` for the default, and it'll work out either way
+    - If you have a setting for `lit-html/` for `lit-html/...` it won't match `lit`, and vice versa
+    - But you can try to import `lit-html/` for the default, and it'll work out either way
 
 - Lume is the best way to do web standard frontend on Deno
   - I can continue to work with (almost) web standard files but still use TypeScript and Deno default tooling
