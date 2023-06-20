@@ -11,7 +11,13 @@ const render = (template: TemplateResult): string => {
 
 export default function (): string {
   const template = html`
-    <h1>Test World</h1>
+    <script type="module" src="/component.js"></script>
+    <main>
+      <h1>Lit-HTML</h1>
+
+      <p>This page is a Lit-HTML template</p>
+      <p>But the blue text following this is is a Lit web-component: <simple-greeting></simple-greeting></p>
+  </main>
   `;
   return render(template);
 }
