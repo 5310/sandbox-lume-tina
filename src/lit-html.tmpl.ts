@@ -1,4 +1,4 @@
-import { html, TemplateResult } from "npm:lit-html";
+import { html, TemplateResult } from "lit-html/";
 
 // https://stackoverflow.com/a/70658580
 const render = (template: TemplateResult): string => {

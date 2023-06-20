@@ -1,10 +1,19 @@
-- Deno has come a long way
-  - No matter what I do, import maps DO NOT work with NPM
+- Deno has come a long way, but there are still issues
+  - Deno seems to match import map qualifiers literally
+      - If you have a setting for `lit-html/` for `lit-html/...` it won't match `lit`, and vice versa
+      - But you can try to import `lit-html/` for the default, and it'll work out either way
 
 - Lume is the best way to do web standard frontend on Deno
   - I can continue to work with (almost) web standard files but still use TypeScript and Deno default tooling
   - Lume can't re-parse `.html` files, but just renaming them to `.md` works fine
   - And we also get to generate static pages however we want, JSX or Lit-HTML
+  - Lume's ESbuild plugin is the easiest way to process TypeScript dependencies
+    - https://lume.land/plugins/esbuild/
+    - It can even handle `npm:...` imports!
+    - But it doesn't seem to be able to handle the Deno `npm:...` imports when delegated through an import map
+      - In retrospect, that seems obvious
+      - Deno's the one that translates `npm:...`s to ESM.sh URLs, which isn't happening at this stage
+      - Solution is to simply use the ESM.sh URLs in the import map for frontend stuff, or just in general because I hate Deno's NPM import hacks
 
 - Tina CMS is still the only sensible configurable Git-backed CMS out there
   - Especially as ~~Netlify CMS~~ Decap CMS continues to languish
