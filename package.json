@@ -1,0 +1,16 @@
+{
+  "name": "starter-basic",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "@tinacms/cli dev",
+    "build": "@tinacms/cli build",
+    "start": "@tinacms/cli build"
+  },
+  "dependencies": {
+    "tinacms": "latest"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "latest"
+  }
+}
