@@ -19,7 +19,9 @@
 				"tamasfe.even-better-toml",
 				"mutantdino.resourcemonitor",
 				"rust-lang.rust-analyzer",
-				"schoero.tagged-template-syntax-highlighting"
+				"schoero.tagged-template-syntax-highlighting",
+				"esbenp.prettier-vscode",
+				"plievone.vscode-template-literal-editor"
 			]
 		}
 	}
